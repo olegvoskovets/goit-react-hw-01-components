@@ -1,0 +1,23 @@
+.transaction_history {
+  margin-top: 50px;
+  width: 800px;
+  background-color: #fff;
+}
+
+.header {
+  background-color: rgba(124, 231, 245, 0.637);
+}
+.void {
+  font-size: 24px;
+}
+.amount,
+.currency {
+  text-align: center;
+}
+.type {
+  padding-left: 50px;
+  text-align: start;
+}
+.void:nth-child(2n) {
+  background-color: rgb(212, 224, 230);
+}
