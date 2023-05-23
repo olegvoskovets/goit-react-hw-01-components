@@ -20,18 +20,18 @@ function getRandomHexColor() {
     .padStart(6, 0)}`;
 }
 
-const returnDeduction = array => {
-  let newArray = [];
+// const returnDeduction = array => {
+//   let newArray = [];
 
-  array.forEach(item => {
-    if (newArray.length === 0) {
-      newArray.push(item);
-    } else {
-      newArray.forEach(item);
-    }
-  });
-  console.log('newArray', newArray);
-};
+//   array.forEach(item => {
+//     if (newArray.length === 0) {
+//       newArray.push(item);
+//     } else {
+//       newArray.forEach(item);
+//     }
+//   });
+//   console.log('newArray', newArray);
+// };
 
 export const Statistics = ({ stats, title }) => {
   // const newArray = returnDeduction(stats);
