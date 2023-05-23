@@ -44,4 +44,5 @@ ol {
 .app {
   display: flex;
   flex-direction: column;
+  margin: 100px 0;
 }

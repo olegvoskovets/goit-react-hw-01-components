@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import style from './FriendList.module.css';
 
 export const FriendListItem = ({ friend }) => {
@@ -5,7 +6,6 @@ export const FriendListItem = ({ friend }) => {
 
   const backColor = () => {
     const color = isOnline ? 'green' : 'red';
-    console.log(color);
     return color;
   };
 
@@ -19,4 +19,8 @@ export const FriendListItem = ({ friend }) => {
       <p className={style.name}>{name}</p>
     </li>
   );
+};
+
+FriendListItem.propTypes = {
+  friend: PropTypes.object,
 };

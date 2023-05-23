@@ -1,22 +1,9 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 import style from './User.module.css';
+import { Stats } from './Stats';
 
 export const User = ({ user }) => {
   const { username, tag, location, avatar } = user;
-  // const { followers, views, likes } = user.stats;
-
-  const Stats = ({ stats }) => {
-    var key = Object.keys(stats);
-
-    return key.map(item => {
-      return (
-        <li key={item} className={style.stat_item}>
-          <span className={style.label}>{item}</span>
-          <span className={style.quantity}>{stats[item]}</span>
-        </li>
-      );
-    });
-  };
 
   return (
     <div className={style.profile}>
@@ -32,4 +19,12 @@ export const User = ({ user }) => {
       </ul>
     </div>
   );
+};
+
+User.propTypes = {
+  user: PropTypes.object,
+  username: PropTypes.string,
+  tag: PropTypes.string,
+  avatar: PropTypes.string,
+  location: PropTypes.string,
 };
