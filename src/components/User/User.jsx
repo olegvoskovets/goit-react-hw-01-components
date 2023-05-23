@@ -3,7 +3,7 @@ import style from './User.module.css';
 
 export const User = ({ user }) => {
   const { username, tag, location, avatar } = user;
-  const { followers, views, likes } = user.stats;
+  // const { followers, views, likes } = user.stats;
 
   const Stats = ({ stats }) => {
     var key = Object.keys(stats);
