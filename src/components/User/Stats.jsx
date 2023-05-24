@@ -15,5 +15,13 @@ export const Stats = ({ stats }) => {
 };
 
 Stats.propTypes = {
-  stats: PropTypes.object,
+  stats: PropTypes.shape({
+    followers: PropTypes.number,
+    views: PropTypes.number,
+    likes: PropTypes.number,
+  }),
 };
+
+//  "followers": 5603,
+//     "views": 4827,
+//     "likes": 1308

@@ -22,9 +22,10 @@ export const User = ({ user }) => {
 };
 
 User.propTypes = {
-  user: PropTypes.object,
-  username: PropTypes.string,
-  tag: PropTypes.string,
-  avatar: PropTypes.string,
-  location: PropTypes.string,
+  user: PropTypes.shape({
+    username: PropTypes.string,
+    tag: PropTypes.string,
+    avatar: PropTypes.string,
+    location: PropTypes.string,
+  }),
 };

@@ -13,8 +13,9 @@ export const Transaction = ({ item }) => {
 };
 
 Transaction.propTypes = {
-  item: PropTypes.object,
-  type: PropTypes.string,
-  amount: PropTypes.string,
-  currency: PropTypes.string,
+  item: PropTypes.shape({
+    type: PropTypes.string.isRequired,
+    amount: PropTypes.string.isRequired,
+    currency: PropTypes.string.isRequired,
+  }),
 };
